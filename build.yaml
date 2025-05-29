@@ -1,0 +1,6 @@
+---
+include:
+  - board: nice_nano_v2
+    shield: sweep_bling_left
+  - board: nice_nano_v2
+    shield: sweep_bling_right
