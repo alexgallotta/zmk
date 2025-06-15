@@ -99,7 +99,7 @@
             bindings = <
        //╭───────┬──────────┬──────────┬────────┬────────╮   ╭────────────┬────────────┬────────────┬────────────┬──────────╮
        //│    XX │   F9     │   F10    │   F11  │   F12  │   │ MW_LEFT    │ MW_DOWN    │ MW_UP      │ MW_RIGHT   │ CLICK_MID  │
-          &none   &kp F9     &kp F10    &kp F11  &kp F12     &mkp WH_L     &mkp WH_D     &mkp WH_U     &mkp WH_R     &mkp BTN2
+          &none   &kp F9     &kp F10    &kp F11  &kp F12     &none     &none     &none &none &none     &none 
 
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
        //│    XX │   F5     │   F6     │   F7   │   F8   │   │ M_LEFT     │ M_DOWN     │ M_UP       │ M_RIGHT    │  XX      │
