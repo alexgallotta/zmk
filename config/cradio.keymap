@@ -23,7 +23,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        hold_layer_sym: hold_tap {
+        ht: hold_layer_sym {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <1>;
             label = "HOLD_LAYER_SYM";
