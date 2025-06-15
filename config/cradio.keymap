@@ -11,7 +11,7 @@
 
 // #define SYM_LAYER(k) &ht &mo 2 k 
 
- {
+/ {
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
