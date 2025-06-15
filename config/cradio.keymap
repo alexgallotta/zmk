@@ -51,8 +51,8 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             &kp G   HRML(S,        D,         F,         G)             HRMR(H,        J,         L,        L)      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z hold sym         │  X │ C  │  V        │  B       │   │  N       │  M       │ , < │ . >  │ / hold sym     │
-            &hold_layer2 <&kp Z>  &kp X &kp C &kp V      &kp B      &kp N &kp M &kp COMMA  &kp DOT &hold_layer_sym <&kp FSLH>
+        //│  Z hold sym         │  X │ C  │  V        │  B       │   │  N       │  M       │ , <         │ . >  │   / hold sym     │
+            &hold_layer2 <&kp Z>  &kp X &kp C &kp V      &kp B         &kp N     &kp M       &kp COMMA  &kp DOT &hold_layer_sym <&kp FSLH>
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 1 TAB   &kp SPACE     &kp BSPC   &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -69,7 +69,7 @@
             &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp K_CMENU
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 0        │  1       │  2       │  3       │  =       │   │          │          │          │          │          │
-           &kb N0      &kp N1     &kp N2     &kp N3     &kp N0         &none     &none     &none     &none     &none
+           &kb N0      &kp N1     &kp N2     &kp N3     &kp N0         &none      &none       &none        &none       &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -80,13 +80,13 @@
            bindings = <
     //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
     //│  !      │  @       │  #       │  [       │  ]       │   │  &       │  \       │  |       │  XX       │  XX       │
-        &kp EXCL  &kp AT     &kp HASH   &kp LBKT   &kp RBKT   &kp CARET  &kp BSLH  &kp PIPE   &none      &none
+        &kp EXCL  &kp AT     &kp HASH   &kp LBKT   &kp RBKT         &kp CARET  &kp BSLH  &kp PIPE   &none      &none
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
     //│  '      │  "       │  -       │  (       │  )       │   │  ^       │  $       │  %       │  BR_DN   │  BR_UP  │
-        &kp QUOTE &kp DQUOTE &kp MINUS  &kp LPAR   &kp RPAR   &kp ASTRK  &kp DOLLAR &kp PRCNT  &kp C_BRI_DN  &kp C_BRI_UP
+        &kp QUOTE &kp DQUOTE &kp MINUS  &kp LPAR   &kp RPAR         &kp ASTRK  &kp DOLLAR &kp PRCNT  &kp C_BRI_DN  &kp C_BRI_UP
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  `      │  ~       │  _       │  {       │  }       │   │  XX | XX | MUTE    │  VL_DN   │  VL_UP   │
-        &kp GRAVE &kp TILDE  &kp UNDERSCORE &kp LBRC &kp RBRC  &none &none &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
+    //│  `      │  ~       │  _       │  {       │  }       │   │  XX     | XX | MUTE    │  VL_DN   │  VL_UP   │
+        &kp GRAVE &kp TILDE  &kp UNDERSCORE &kp LBRC &kp RBRC      &none &none &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
     //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                          &trans     &trans         &trans     &trans
     //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
