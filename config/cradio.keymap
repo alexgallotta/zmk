@@ -107,7 +107,7 @@
 
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼──────────┤
        //│    XX │   F1     │   F2     │   F3   │   F4   │   │ PRINTSCRN  │    XX      │    XX      │ BOOTLOADER │ RESET      │
-          &none   &kp F1     &kp F2     &kp F3   &kp F4      &kp PSCR      &none         &none         &bootloader   &sys_reset
+          &none   &kp F1     &kp F2     &kp F3   &kp F4      &kp PSCR      &none         &none         &none &none
 
        //╰───────┴──────────┴──────────┼────────┼────────╯   ╰────────────┴────────────┴────────────┴────────────┴─────────╯
        //                                                   │CLICK_LEFT│CLICK_RIGHT│
