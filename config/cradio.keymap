@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include <dt-bindings/zmk/pointing.h>
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+// #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
