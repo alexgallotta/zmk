@@ -33,7 +33,7 @@
       compatible = "zmk,combos";
       combo_qw_esc {
             timeout-ms = <50>;
-            key-positions = <&q &w>;
+            key-positions = <&Q &W>;
             bindings = <&kp ESC>;
       };
     };
