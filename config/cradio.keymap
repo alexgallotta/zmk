@@ -58,7 +58,7 @@
         //│  Z hold sym         │  X │ C  │  V        │  B       │   │  N       │  M       │ , <         │ . >  │   / hold sym │
             &kp Z     &kp X         &kp C    &kp V      &kp B         &kp N     &kp M       &kp COMMA  &kp DOT &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 1 TAB   &kp SPACE     &kp BSPC   &lt 3 ENTER
+                                            &lt 1 TAB   &lt 3 SPACE     &kp BSPC   &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
