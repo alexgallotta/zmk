@@ -47,7 +47,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ;      │
-            &kp A      HRML(S,        D,         F,         G)             HRMR(P,        J,         K,        L)      &kp SEMICOLON
+            &kp A      HRML(S,        D,         F,         G)             HRMR(H,        J,         K,        L)      &kp SEMICOLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z hold sym         │  X │ C  │  V        │  B       │   │  N       │  M       │ , <         │ . >  │   / hold sym │
             &lt 2 Z     &kp X         &kp C    &kp V      &kp B         &kp N     &kp M       &kp COMMA  &kp DOT &lt 2 FSLH
