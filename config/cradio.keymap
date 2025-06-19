@@ -36,6 +36,11 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
       };
+      combo_op_canc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp DEL>;
+      };
     };
 
     keymap {
@@ -52,7 +57,7 @@
         //│  Z hold sym         │  X │ C  │  V        │  B       │   │  N       │  M       │ , <         │ . >  │   / hold sym │
             &lt 2 Z     &kp X         &kp C    &kp V      &kp B         &kp N     &kp M       &kp COMMA  &kp DOT &lt 2 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 1 TAB   &lt 3 SPACE     &kp BSPC   &kp ENTER
+                                            &lt 3 TAB   &lt 1 SPACE     &lt 1 BSPC   &lt 3 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
