@@ -27,22 +27,16 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        // ht: hold_layer_sym {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <1>;
-        //     label = "HOLD_LAYER_SYM";
-        //     flavor = "hold-preferred";
-        //     tapping-term-ms = <200>;
-        // };
     };
 
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <1 2>;
-    //         then-layer = <3>;
-    //     };
-    // };
+    combos {
+      compatible = "zmk,combos";
+      combo_qw_esc {
+            timeout-ms = <50>;
+            key-positions = <&q &w>;
+            bindings = <&kp ESC>;
+      };
+    };
 
     keymap {
         compatible = "zmk,keymap";
