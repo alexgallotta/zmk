@@ -83,13 +83,13 @@
            bindings = <
     //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
     //│  !      │  @       │  #       │  [       │  ]       │   │  &       │  \       │  |       │  XX       │  XX       │
-        &kp EXCL  &kp AT     &kp HASH   &kp LBKT   &kp RBKT         &kp CARET  &kp BSLH  &kp PIPE   &none      &none
+        &kp EXCL  &kp AT     &kp HASH   &kp LBKT   &kp RBKT         &kp ANPS  &kp BSLH  &kp PIPE   &kp GRAVE &kp TILDE
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
     //│  '      │  "       │  -       │  (       │  )       │   │  ^       │  $       │  %       │  BR_DN   │  BR_UP  │
-        &kp SQT &kp DQT &kp MINUS  &kp LPAR   &kp RPAR         &kp ASTRK  &kp DOLLAR &kp PRCNT  &kp C_BRI_DN  &kp C_BRI_UP
+        &kp SQT &kp DQT &kp MINUS  &kp LPAR   &kp RPAR         &kp CARET  &kp DOLLAR &kp PRCNT  &kp C_BRI_DN  &kp C_BRI_UP
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  `      │  ~       │  _       │  {       │  }       │   │  XX     | XX | MUTE    │  VL_DN   │  VL_UP   │
-        &kp GRAVE &kp TILDE  &kp UNDERSCORE &kp LBRC &kp RBRC      &none &none &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP
+    //│  `      │  ~       │  _       │  {       │  }       │   │  MUTE | VL_DN | VL_UP    │  VL_DN   │  VL_UP   │
+        &none      &none  &kp UNDERSCORE &kp LBRC &kp RBRC      &kp C_MUTE &kp C_VOLUME_DOWN &kp C_VOLUME_UP &none &none
     //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                          &trans     &trans         &trans     &trans
     //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
