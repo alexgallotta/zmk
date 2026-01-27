@@ -82,7 +82,7 @@
         sym {
            bindings = < 
     //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-    //│  !      │  @       │  #       │  [       │  ]       │   │  &       │  \       │  |       │  `       │  XX       │
+    //│  !      │  @       │  #       │  [       │  ]       │   │  &       │  \       │  |       │  `        │  XX       │
         &kp EXCL  &kp AT     &kp HASH   &kp LBKT   &kp RBKT         &kp AMPS  &kp BSLH  &kp PIPE   &kp GRAVE &kp ~
     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
     //│  '      │  "       │  -       │  (       │  )       │   │  ^       │  $       │  %       │  BR_DN   │  BR_UP  │
@@ -102,11 +102,11 @@
             bindings = <
        //╭───────┬──────────┬──────────┬────────┬────────╮   ╭────────────┬────────────┬────────────┬────────────┬──────────╮
        //│    BT 0 | F9     │   F10    │   F11  │   F12  │   │ MW_LEFT    │ MW_DOWN    │ MW_UP      │ MW_RIGHT   │ CLICK_MID  │
-       &bt BT_SEL 0 &kp F9   &kp F10  &kp F11  &kp F12    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &mkp MCLK
+       &bt BT_SEL 0 &kp F9   &kp F10  &kp F11  &kp F12    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &mbtn MB_LEFT
 
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
        //│    XX │   F5     │   F6     │   F7   │   F8   │   │ M_LEFT     │ M_DOWN     │ M_UP       │ M_RIGHT    │  bt clear      │
-          &bt BT_SEL 1   &kp F5 &kp F6  &kp F7 &kp F8  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &bt BT_CLR
+          &bt BT_SEL 1   &kp F5 &kp F6  &kp F7 &kp F8  &mmv MS_LEFT &mmv MS_DOWN &mmv MS_UP &mmv MS_RIGHT &bt BT_CLR
 
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼──────────┤
        //│    XX │   F1     │   F2     │   F3   │   F4   │   │ PRINTSCRN  │    XX      │    XX      │ BOOTLOADER │ RESET      │
@@ -114,7 +114,8 @@
 
        //╰───────┴──────────┴──────────┼────────┼────────╯   ╰────────────┴────────────┴────────────┴────────────┴─────────╯
        //                                                   │CLICK_LEFT│CLICK_RIGHT│
-                                    &trans      &trans        &mkp LCLK     &mkp RCLK >;
+                                    &trans      &trans       &mbtn MB_LEFT  &mbtn MB_RIGHT
+            >;
         };
 
     };
