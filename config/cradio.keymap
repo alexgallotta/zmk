@@ -106,10 +106,10 @@
         &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
        //│    XX │   F5     │   F6     │   F7   │   F8   │   │ M_LEFT     │ M_DOWN     │ M_UP       │ M_RIGHT    │  bt clear      │
-          &bt BT_SEL 1   &kp F5 &kp F6  &kp F7 &kp F8  &mmv MS_LEFT &mmv MS_DOWN &mmv MS_UP &mmv MS_RIGHT &bt BT_CLR
+          &bt BT_SEL   &kp F5 &kp F6  &kp F7 &kp F8  &mmv MS_LEFT &mmv MS_DOWN &mmv MS_UP &mmv MS_RIGHT &bt BT_CLR
        //├───────┼──────────┼──────────┼────────┼────────┤   ├────────────┼────────────┼────────────┼────────────┼──────────┤
        //│    XX │   F1     │   F2     │   F3   │   F4   │   │ PRINTSCRN  │    XX      │    XX      │ BOOTLOADER │ RESET      │
-          &bt BT_SEL 2   &kp F1     &kp F2     &kp F3   &kp F4 &kp PSCRN      &none     &none         &bootloader &sys_reset
+          &bt BT_SEL   &kp F1     &kp F2     &kp F3   &kp F4 &kp PSCRN      &none     &none         &bootloader &sys_reset
        //╰───────┴──────────┴──────────┼────────┼────────╯   ╰────────────┴────────────┴────────────┴────────────┴─────────╯
        //                                                   │CLICK_LEFT│CLICK_RIGHT│
                                     &trans      &trans       &mbtn MB_LEFT  &mbtn MB_RIGHT
