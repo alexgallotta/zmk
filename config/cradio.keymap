@@ -114,7 +114,8 @@
         &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 &kp F1 
        //╰───────┴──────────┴──────────┼────────┼────────╯   ╰────────────┴────────────┴────────────┴────────────┴─────────╯
        //                                                   │CLICK_LEFT│CLICK_RIGHT│
-                                    &trans      &trans       &mbtn MB_LEFT  &mbtn MB_RIGHT
+                                    // &trans      &trans       &mbtn MB_LEFT  &mbtn MB_RIGHT
+                &trans &trans &trans &trans 
             >;
         };
 
