@@ -13,6 +13,10 @@
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3,k4) &ht RSHFT k1 &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+
+CONFIG_ZMK_POINTING=y
 // #define SYM_LAYER(k) &ht &mo 2 k 
 
 / {
