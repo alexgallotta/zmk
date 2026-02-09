@@ -53,8 +53,8 @@
 // │    A     │  GUI/S   │  ALT/D   │  CTL/F   │  SFT/G   │ │  SFT/H   │  CTL/J   │  ALT/K   │  GUI/L   │    ;     │
       &kp A      HRML(S,        D,         F,         G)       HRMR(H,        J,         K,         L)      &kp SEMI
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-// │ LT2/Z    │    X     │    C     │    V     │    B     │ │    M     │    N     │    ,     │    .     │ LT2/ /   │
-      &lt 2 Z    &kp X      &kp C      &kp V      &kp B        &kp M      &kp N      &kp COMMA  &kp DOT    &lt 2 FSLH
+// │ LT2/Z    │    X     │    C     │    V     │    B     │ │    N     │    M     │    ,     │    .     │ LT2/ /   │
+      &lt 2 Z    &kp X      &kp C      &kp V      &kp B        &kp N      &kp M      &kp COMMA  &kp DOT    &lt 2 FSLH
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
 //                                  │ LT3/TAB  │ LT1/SPC  │ │ LT1/BSPC │ LT3/ENT  │
                                      &lt 3 TAB   &lt 1 SPACE   &lt 1 BSPC   &lt 3 ENTER
