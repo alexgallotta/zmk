@@ -72,7 +72,7 @@
       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp K_CMENU
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    0     │    1     │    2     │    3     │    =     │ │  BRI_DN  │  BRI_UP  │   MUTE   │  VOL_DN  │  VOL_UP  │
-      &kp N0     &kp N1     &kp N2     &kp N3     &kp EQUAL    &kp C_BRI_DN &kp C_BRI_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
+      &kp N0     &kp N1     &kp N2     &kp N3     &kp EQUAL    &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &trans     &trans
             >;
@@ -101,12 +101,12 @@
       &bt BT_SEL 0 &kp F9   &kp F10    &kp F11    &kp F12      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &kp PSCRN
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │  BT_1    │    F5    │    F6    │    F7    │    F8    │ │  MOVE_L  │  MOVE_D  │  MOVE_U  │  MOVE_R  │   NONE   │
-      &bt BT_SEL 1 &kp F5   &kp F6     &kp F7     &kp F8       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
+      &bt BT_SEL 1 &kp F5   &kp F6     &kp F7     &kp F8       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp MB3
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │  BT_CLR  │    F1    │    F2    │    F3    │    F4    │ │  L_CLICK │ R_CLICK  │ M_CLICK  │   NONE   │  RESET   │
-      &bt BT_CLR &kp F1     &kp F2     &kp F3     &kp F4       &mkp MB1   &mkp MB2   &mkp MB3   &none      &sys_reset
+      &bt BT_CLR &kp F1     &kp F2     &kp F3     &kp F4       &none      &none       &none      &none      &sys_reset
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                       &trans     &trans       &trans     &trans
+                                       &trans     &trans       &mkp MB1   &mkp MB2
             >;
         };
     };
