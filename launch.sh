@@ -20,7 +20,8 @@ CONFIG_DIR="$ZMK_WORKSPACE/config"
 FIRMWARE_DIR="$ZMK_WORKSPACE/firmware"
 
 # Official ZMK dev image (includes Zephyr SDK + west + all deps)
-ZMK_IMAGE="docker.io/zmkfirmware/zmk-dev-arm:3.5"
+ZMK_IMAGE="docker.io/zmkfirmware/zmk-build-arm:stable"
+ZMK_REVISION="v0.3" #must use v0.3 with zephyr stable which is 3.5
 
 # ─── Board and shield definitions ────────────────────────────────────────────
 # Edit these or rely on build.yaml in your config repo
@@ -47,6 +48,7 @@ clone_repos() {
     if [ ! -d "$ZMK_DIR" ]; then
         log_info "Cloning ZMK firmware source..."
         git clone https://github.com/zmkfirmware/zmk.git "$ZMK_DIR"
+		cd "$ZMK_DIR" && git checkout "$ZMK_REVISION" && cd -
     else
         log_ok "ZMK source already cloned."
     fi
@@ -64,6 +66,7 @@ run_in_container() {
     podman run --rm -it \
         --security-opt label=disable \
         --workdir /workspaces/zmk \
+		-e ZEPHYR_SDK_INSTALL_DIR=/opt/zephyr-sdk-0.16.3 \
         -v "$ZMK_DIR:/workspaces/zmk:Z" \
         -v "$CONFIG_DIR:/workspaces/zmk-config:Z" \
         -v "$FIRMWARE_DIR:/workspaces/firmware:Z" \
@@ -94,6 +97,10 @@ init_west() {
         else
             echo "[*] West already initialized."
         fi
+
+        echo "[*] Exporting Zephyr CMake package..."
+		west update
+        west zephyr-export
 
         echo "[*] Done!"
     '
