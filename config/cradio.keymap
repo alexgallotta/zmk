@@ -66,8 +66,8 @@
         numnav {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │   ESC   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │   │   DEL   │
-      &kp ESC   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP      &kp DEL
+// │   ESC   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │    DEL   │
+      &kp ESC   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp DEL
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    -     │    4     │    5     │    6     │    +     │ │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS    &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
@@ -98,11 +98,11 @@
         mouse {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-      &bt BT_SEL 0 &kp F9   &kp F10    &kp F11    &kp F12      &mkp MB3 &msc SCRL_DOWN &mmv MOVE_UP &msc SCRL_UP  &kp PSCRN
+       &kp F1   &kp F2    &kp F3    &kp F4    &kp F5      &mkp MB3 &msc SCRL_DOWN &mmv MOVE_UP &msc SCRL_UP  &kp PSCRN
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-      &bt BT_SEL 1 &kp F5   &kp F6     &kp F7     &kp F8       &msc SCRL_LEFT &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT
+       &kp F6     &kp F7     &kp F8 &kp F9 &kp F10        &msc SCRL_LEFT &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-      &bt BT_CLR &kp F1     &kp F2     &kp F3     &kp F4       &none      &none       &none      &none      &sys_reset
+       &kp F11     &kp F12     &mkp MB1 &mkp MB2    &none    &none      &none       &bt BT_SEL 0&bt BT_SEL 1&bt BT_CLR
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &mkp MB1   &mkp MB2
             >;
