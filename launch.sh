@@ -95,9 +95,6 @@ init_west() {
             echo "[*] West already initialized."
         fi
 
-        echo "[*] Exporting Zephyr CMake package..."
-        west zephyr-export
-
         echo "[*] Done!"
     '
 
@@ -252,6 +249,9 @@ cmd_build() {
     log_info "══════════════════════════════════════════════"
     log_info "  ZMK Container Build - Building Firmware"
     log_info "══════════════════════════════════════════════"
+    cd "$CONFIG_DIR"
+    git pull
+	cd -
     build_firmware
     flash_info
     log_ok "Build complete!"
@@ -262,12 +262,6 @@ cmd_clean() {
     rm -rf "$ZMK_DIR/app/build"*
     rm -rf "$FIRMWARE_DIR"/*
     log_ok "Cleaned."
-}
-
-cmd_pull_config() {
-    log_info "Pulling latest zmk-config..."
-    cd "$CONFIG_DIR"
-    git pull
 }
 
 cmd_shell() {
@@ -287,7 +281,6 @@ show_help() {
     echo "  setup        Pull image, clone repos, init west workspace"
     echo "  build        Build firmware inside container"
     echo "  clean        Clean build artifacts"
-    echo "  pull-config  Git pull your zmk-config repo"
     echo "  shell        Interactive bash shell inside the container"
     echo "  help         Show this message"
     echo ""
@@ -307,7 +300,6 @@ case "${1:-help}" in
     setup)       cmd_setup ;;
     build)       cmd_build ;;
     clean)       cmd_clean ;;
-    pull-config) cmd_pull_config ;;
     shell)       cmd_shell ;;
     help|*)      show_help ;;
 esac
