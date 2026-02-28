@@ -82,8 +82,8 @@
         sym {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │    !     │    @     │    #     │    [     │    ]     │ │    &     │    \     │    |     │    `     │    ~     │
-      &kp EXCL   &kp AT     &kp HASH   &kp LBKT   &kp RBKT     &kp AMPS   &kp BSLH   &kp PIPE   &kp GRAVE  &kp TILDE
+// │    ~     │    `     │    #     │    [     │    ]     │ │    !     |    @     |    &     │    \     │    |     │
+     &kp GRAVE  &kp TILDE    &kp HASH   &kp LBKT   &kp RBKT     &kp EXCL   &kp AT &kp AMPS   &kp BSLH   &kp PIPE   
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    '     │    "     │    -     │    (     │    )     │ │    ^     │    $     │    %     │   NONE   │   NONE   │
       &kp SQT    &kp DQT    &kp MINUS  &kp LPAR   &kp RPAR     &kp CARET  &kp DOLLAR &kp PRCNT  &none      &none
