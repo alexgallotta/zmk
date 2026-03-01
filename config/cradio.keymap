@@ -89,7 +89,7 @@
       &kp SQT    &kp DQT    &kp MINUS  &kp LPAR   &kp RPAR     &kp CARET  &kp DOLLAR &kp PRCNT  &none      &none
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │   NONE   │   NONE   │    _     │    {     │    }     │ │   NONE   │   NONE   │   NONE   │   NONE   │   NONE   │
-      &none      &none      &kp UNDER  &kp LBRC   &kp RBRC     &none      &none      &none      &none      &none
+      &none      &none      &kp UNDER  &kp LBRC   &kp RBRC      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none      &none
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &trans     &trans
             >;
@@ -102,7 +102,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
        &kp F6     &kp F7     &kp F8 &kp F9 &kp F10        &msc SCRL_LEFT &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-       &kp F11     &kp F12     &mkp MB1 &mkp MB2    &none    &none      &none       &bt BT_SEL 0&bt BT_SEL 1&bt BT_CLR
+       &kp F11     &kp F12     &mkp MB1 &mkp MB2    &none    &none      &none       &none      &none      &none
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &mkp MB1   &mkp MB2
             >;
