@@ -27,21 +27,21 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    //
-    // combos {
-    //     compatible = "zmk,combos";
-    //     combo_qw_esc {
-    //         timeout-ms = <50>;
-    //         key-positions = <0 1>;
-    //         bindings = <&kp ESC>;
-    //     };
-    //     combo_op_canc {
-    //         timeout-ms = <50>;
-    //         key-positions = <8 9>;
-    //         bindings = <&kp DEL>;
-    //     };
-    // };
-    //
+
+    combos {
+        compatible = "zmk,combos";
+        combo_qw_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_op_canc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp DEL>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,7 +52,7 @@
       &kp Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O      &kp P
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    A     │  GUI/S   │  ALT/D   │  CTL/F   │  SFT/G   │ │  SFT/H   │  CTL/J   │  ALT/K   │  GUI/L   │    ;     │
-      &kp A      HRML(S,        D,         F,         G)       HRMR(H,        J,         K,         L)      &kp SEMI
+      HRML(A,        S,         D,         F)  &kp G            &kp H     HRMR(J,         K,         L      SEMI)
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │ LT2/Z    │    X     │    C     │    V     │    B     │ │    N     │    M     │    ,     │    .     │ LT2/ /   │
       &lt 2 Z    &kp X      &kp C      &kp V      &kp B        &kp N      &kp M      &kp COMMA  &kp DOT    &lt 2 FSLH
@@ -66,8 +66,8 @@
         numnav {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │   ESC   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │    DEL   │
-      &kp ESC   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp DEL
+// │   none   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │    none   │
+      &none   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &none
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    -     │    4     │    5     │    6     │    +     │ │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS    &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
