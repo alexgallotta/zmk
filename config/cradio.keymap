@@ -7,9 +7,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
-#define HRMR(k1,k2,k3,k4) &ht RSHFT k1 &ht RCTRL k2  &ht LALT k3  &ht RGUI k4
-
+#define HRML(k1,k2,k3) &ht LSHFT k1  &ht LCTRL k3  &ht LALT k3
+#define HRMR(k1,k2,k3) &ht LALT k1 &ht RCTRL k2  &ht LSHFT k3 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
@@ -52,7 +51,7 @@
       &kp Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O      &kp P
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    A     │  GUI/S   │  ALT/D   │  CTL/F   │  SFT/G   │ │  SFT/H   │  CTL/J   │  ALT/K   │  GUI/L   │    ;     │
-      HRML(A,        S,         D,         F)  &kp G            &kp H     HRMR(J,         K,         L,      SEMI)
+      HRML(A,        S,         D)      &kp F      &kp G        &kp H   &kp J     HRMR(K,         L,      SEMI)
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │ LT2/Z    │    X     │    C     │    V     │    B     │ │    N     │    M     │    ,     │    .     │ LT2/ /   │
       &lt 2 Z    &kp X      &kp C      &kp V      &kp B        &kp N      &kp M      &kp COMMA  &kp DOT    &lt 2 FSLH
@@ -66,8 +65,8 @@
         numnav {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │   none   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │    none   │
-      &none   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &none
+// │   none   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │   GUI │
+      &none   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp RGUI
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    -     │    4     │    5     │    6     │    +     │ │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS    &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
@@ -82,14 +81,14 @@
         sym {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │    ~     │    `     │    #     │    [     │    ]     │ │    !     |    @     |    &     │    \     │    |     │
-     &kp GRAVE  &kp TILDE    &kp HASH   &kp LBKT   &kp RBKT     &kp EXCL   &kp AT &kp AMPS   &kp BSLH   &kp PIPE   
+// │    ~     │    `     │    [     │    ]     │  #     │   │    !     |    @     |    &     │    \     │    |     │
+     &kp GRAVE  &kp TILDE  &kp LBKT   &kp RBKT &kp HASH         &kp EXCL   &kp AT &kp AMPS   &kp BSLH   &kp PIPE   
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-// │    '     │    "     │    -     │    (     │    )     │ │    ^     │    $     │    %     │   NONE   │   NONE   │
-      &kp SQT    &kp DQT    &kp MINUS  &kp LPAR   &kp RPAR     &kp CARET  &kp DOLLAR &kp PRCNT  &none      &none
+// │    '     │    "     │    (     │    )     │   -     ││    ^     │    $     │    %     │   NONE   │   NONE   │
+      &kp SQT    &kp DQT      &kp LPAR   &kp RPAR  &kp MINUS   &kp CARET  &kp DOLLAR &kp PRCNT  &none      &none
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-// │   NONE   │   NONE   │    _     │    {     │    }     │ │   NONE   │   NONE   │   NONE   │   NONE   │   NONE   │
-      &none      &none      &kp UNDER  &kp LBRC   &kp RBRC      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none      &none
+// │   NONE   │   NONE   │    {     │    }     │    _      ││  NONE   │   NONE   │   NONE   │   NONE   │   NONE   │
+      &none      &none      &kp LBRC   &kp RBRC  &kp UNDER  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none      &none
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &trans     &trans
             >;
