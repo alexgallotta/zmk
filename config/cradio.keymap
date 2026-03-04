@@ -65,14 +65,14 @@
         numnav {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │   none   │    7     │    8     │    9     │    * │ │       MENU   │   │  PG_DN   │  UP      PG_UP   │   GUI │
-      &none   &kp N7     &kp N8     &kp N9     &kp STAR     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp RGUI
+// │    0      │    1     │    2     │    3         4     │ │   MENU   │  PG_DN   │  UP      |  PG_UP   │   GUI │
+      &kp N0      &kp N1     &kp N2     &kp N3     &kp N4    &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp RGUI
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-// │    -     │    4     │    5     │    6     │    +     │ │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
-      &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS    &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
+//     5     │    6     │    7     │    8     │    9   │  │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
+     &kp N5     &kp N6  &kp N7     &kp N8     &kp N9        &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-// │    0     │    1     │    2     │    3     │    =     │ │  BRI_DN  │  BRI_UP  │   MUTE   │  VOL_DN  │  VOL_UP  │
-      &kp N0     &kp N1     &kp N2     &kp N3     &kp EQUAL    &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+// │    *     │    -     │   +      │    =     │    none   ││  BRI_DN  │  BRI_UP  │   MUTE   │  VOL_DN  │  VOL_UP  │
+   &kp STAR    &kp MINUS &kp PLUS     &kp EQUAL   &none       &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &trans     &trans
             >;
