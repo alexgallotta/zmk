@@ -65,11 +65,11 @@
         numnav {
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-// │    0      │    1     │    2     │    3         4     │ │   MENU   │  PG_DN   │  UP      |  PG_UP   │   GUI │
-      &kp N0      &kp N1     &kp N2     &kp N3     &kp N4    &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp RGUI
+// │    1     │    2     │    3         4      │    5     │   MENU   │  PG_DN   │  UP      |  PG_UP   │   GUI │
+      &kp N1     &kp N2     &kp N3     &kp N4    &kp N5     &kp K_CMENU    &kp PG_DN &kp UARW  &kp PG_UP   &kp RGUI
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//     5     │    6     │    7     │    8     │    9   │  │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
-     &kp N5     &kp N6  &kp N7     &kp N8     &kp N9        &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
+// │    6     │    7     │    8     │    9   │     0      │  HOME     LEFT   │   DOWN   │  │  RIGHT   │ END    
+     &kp N6  &kp N7     &kp N8     &kp N9       &kp N0     &kp HOME &kp LARW   &kp DARW      &kp RARW  &kp END
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    *     │    -     │   +      │    =     │    none   ││  BRI_DN  │  BRI_UP  │   MUTE   │  VOL_DN  │  VOL_UP  │
    &kp STAR    &kp MINUS &kp PLUS     &kp EQUAL   &none       &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
@@ -101,7 +101,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
        &kp F6     &kp F7     &kp F8 &kp F9 &kp F10        &msc SCRL_LEFT &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-       &kp F11     &kp F12     &mkp MB1 &mkp MB2    &none    &mkp MB1   &mkp MB2      &none      &none      &none
+       &kp F11     &kp F12     &mkp MB2 &mkp MB1    &none    &mkp MB1   &mkp MB2      &none      &none      &none
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &mkp MB1   &mkp MB2
             >;
