@@ -113,6 +113,5 @@
                 &none &none &none &none &none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none &none 
                     &trans     &trans                   &trans   &trans
             >;
-        }
     };
 };
