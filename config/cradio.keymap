@@ -106,7 +106,7 @@
                                        &trans     &trans       &mkp MB1   &mkp MB2
             >;
         };
-        config {
+        bt_config {
             bindings = <
                 &none &none &none &none &none          &none &none &none &none &none 
                 &none &none &none &none &none          &none &none &none &none &none 
