@@ -48,7 +48,7 @@
             bindings = <
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 // │    Q     │    W     │    E     │    R     │    T     │ │    Y     │    U     │    I     │    O     │    P     │
-      &kp Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O      &kp P
+      &lt 4 Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O      &kp P
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │    A     │  GUI/S   │  ALT/D   │  CTL/F   │  SFT/G   │ │  SFT/H   │  CTL/J   │  ALT/K   │  GUI/L   │    ;     │
       HRML(A,        S,         D)      &kp F      &kp G        &kp H   &kp J     HRMR(K,         L,      SEMI)
@@ -88,7 +88,7 @@
       &kp SQT    &kp DQT      &kp LPAR   &kp RPAR  &kp MINUS   &kp CARET  &kp DOLLAR &kp PRCNT  &none      &none
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // │   NONE   │   NONE   │    {     │    }     │    _      ││  NONE   │   NONE   │   NONE   │   NONE   │   NONE   │
-      &none      &none      &kp LBRC   &kp RBRC  &kp UNDER  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none      &none
+      &none      &none      &kp LBRC   &kp RBRC  &kp UNDER   &none &none &none &none      &none
 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &trans     &trans       &trans     &trans
             >;
@@ -106,5 +106,13 @@
                                        &trans     &trans       &mkp MB1   &mkp MB2
             >;
         };
+        config {
+            bindings = <
+                &none &none &none &none &none          &none &none &none &none &none 
+                &none &none &none &none &none          &none &none &none &none &none 
+                &none &none &none &none &none          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &none &none 
+                    &trans     &trans                   &trans   &trans
+            >;
+        }
     };
 };
